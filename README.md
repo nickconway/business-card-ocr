@@ -1,7 +1,7 @@
 # Buisness Card OCR
 
 ## Overview
-The purpose of this program is to read in business card information and isolate the name, email address, and phone number of the contact.
+The purpose of this program is to read in business card information and isolate the name, email address, and phone number of the contact. This exercise is part of [Asymmetrik's Programming Challenges](https://asymmetrik.com/programming-challenges/)
 
 ## Instructions
 Before running the program, make sure the file to be read is placed in the `data` directory as a `.txt` file. When inputting the file name, type ONLY the file name and extension, no directories. To run the program open a terminal and run these commands:
