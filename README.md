@@ -17,7 +17,7 @@ $ java -cp bin dev.conway.businesscardparser.App
 ```
 
 ## The Process
-Using the provided interfaces, I determined the best way to lay out the program's structure was to have seperate class for each interface.
+Using the provided interfaces, I determined the best way to lay out the program's structure was to have a seperate class for each interface.
 
 The structure I decided on was having a BusinessCard class that implements the BusinessCardParser interface, and inside that is a Contact class which implements the ContactInfo interface and has the member variables of the name, email, and phone number.
 
