@@ -48,6 +48,7 @@ public class BusinessCard implements BusinessCardParser {
 
 	}
 
+	// Returns the card's contact member
 	public ContactInfo getContact(){
 
 		return this.contact;
