@@ -20,6 +20,7 @@ public class BusinessCard implements BusinessCardParser {
 
 		try{
 
+			// Get file to read from user
 			System.out.print("Enter the name of the file to read from: ");
 			Scanner inputScanner = new Scanner(System.in);
 			String input = inputScanner.nextLine();
@@ -30,6 +31,7 @@ public class BusinessCard implements BusinessCardParser {
 
 			File info = new File(path);
 
+			// Read lines from file
 			String document = "";
 			Scanner fileInput = new Scanner(info);
 			while(fileInput.hasNextLine()){
@@ -100,6 +102,7 @@ public class BusinessCard implements BusinessCardParser {
 
 		try{
 
+			// Regex to replace titles
 			String regex = "^( (Mr\\.\\s) | (Mrs\\.\\s) | (Ms\\.\\s) | (Dr\\.\\s) )?";
 			String formattedRegex = regex.replaceAll(" ", "");
 			line = line.replaceAll(formattedRegex, "");
@@ -125,6 +128,7 @@ public class BusinessCard implements BusinessCardParser {
 			return false;
 		}
 
+		// Regex to find the phone number
 		String regex = "^ .* (\\+1)? \\s* (\\(? \\d{3} \\)? -)+ \\d{4} $";
 		String formattedRegex = regex.replaceAll(" ", "");
 
@@ -135,6 +139,7 @@ public class BusinessCard implements BusinessCardParser {
 	// Checks to see if the line is a valid email address
 	private boolean isEmail(String line){
 
+		// Regex to find the email
 		String regex = "^ (\\w | \\.)+ @ \\w+ \\. \\w+ $";
 		String formattedRegex = regex.replaceAll(" ", "");
 
